@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nest</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/02/favicon.png" sizes="32x32">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div
+        class="header-top hidden lg:block py-8 border-b-slate-200 border-b-[1px]"
+      >
+        <div class="w-[97%] mx-auto flex justify-between items-center">
+          <div class="w-[11%]">
+            <a href="#">
+              <img src="./imags-box/logo-nest.png" class="w-full" />
+            </a>
+          </div>
+          <div class="w-[86%] flex">
+            <div class="w-1/2">
+              <div
+                class="p-1 w-[95%] border-2 border-opacity-40 text-sm border-l-green rounded flex justify-between"
+              >
+                <input
+                  type="text"
+                  placeholder="Search for products..."
+                  class="italic outline-none w-[80%] ml-3"
+                />
+                <button
+                  type="submit"
+                  class="opacity-100 bg-l-green text-white font-semibold rounded py-2 px-6 duration-300 hover:bg-[#fdc040]"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-8">
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center text-l-green border-[1px] border-slate-200 rounded py-[5px] px-3 shadow-lg shadow-neutral-150 duration-300 hover:-translate-y-1"
+                >
+                  <span class="whitespace-nowrap">Bacame Vendor</span>
+                  <i class="fa-solid fa-arrow-right-long ml-3"></i>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <g>
+                      <path
+                        d="M20.298 8.38686L21.7149 7.56033C18.6493 2.2939 12.0415 0.282014 6.56113 2.94644V0.930145H4.9212V5.84994H9.84099V4.21001H7.74598C12.3848 2.24224 17.7631 4.03197 20.298 8.38686Z"
+                        fill="#253D4E"
+                      ></path>
+                      <path
+                        d="M5.33116 21.1635C1.52924 18.0758 0.528575 12.686 2.96884 8.43938L1.54702 7.61942C-1.2363 12.4662 -0.183154 18.6069 4.05611 22.2492H2.0513V23.8892H6.97109V18.9694H5.33116V21.1635V21.1635Z"
+                        fill="#253D4E"
+                      ></path>
+                      <path
+                        d="M22.5209 11.2355L19.0426 14.7146L20.202 15.874L21.5959 14.4801C21.0492 19.5603 16.7683 23.4158 11.6588 23.43V25.0699C17.7465 25.0539 22.7967 20.3557 23.2514 14.2849L24.8405 15.874L26 14.7146L22.5209 11.2355Z"
+                        fill="#253D4E"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect width="26" height="26" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-slate-500 ml-1">Compare</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <g>
+                      <path
+                        d="M18.2753 1.28351C17.1493 1.30102 16.0478 1.61536 15.0821 2.19478C14.1164 2.7742 13.3207 3.59818 12.7753 4.58351C12.23 3.59818 11.4343 2.7742 10.4686 2.19478C9.50289 1.61536 8.4014 1.30102 7.27535 1.28351C5.48029 1.3615 3.78905 2.14676 2.57113 3.46774C1.35321 4.78872 0.707598 6.53803 0.775349 8.33351C0.775349 15.1085 11.7313 22.9335 12.1973 23.2655L12.7753 23.6745L13.3533 23.2655C13.8193 22.9355 24.7753 15.1085 24.7753 8.33351C24.8431 6.53803 24.1975 4.78872 22.9796 3.46774C21.7616 2.14676 20.0704 1.3615 18.2753 1.28351ZM12.7753 21.2125C9.52235 18.7825 2.77535 12.8125 2.77535 8.33351C2.70699 7.06822 3.14172 5.82724 3.98471 4.88121C4.82771 3.93518 6.01058 3.36086 7.27535 3.28351C8.54012 3.36086 9.72299 3.93518 10.566 4.88121C11.409 5.82724 11.8437 7.06822 11.7753 8.33351H13.7753C13.707 7.06822 14.1417 5.82724 14.9847 4.88121C15.8277 3.93518 17.0106 3.36086 18.2753 3.28351C19.5401 3.36086 20.723 3.93518 21.566 4.88121C22.409 5.82724 22.8437 7.06822 22.7753 8.33351C22.7753 12.8145 16.0283 18.7825 12.7753 21.2125Z"
+                        fill="#253D4E"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.775391 0.366516)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-slate-500 ml-1">Wishlist</span>
+                </a>
+              </div>
+              <div class="relative group">
+                <a href="#" class="flex relative">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <g>
+                      <path
+                        d="M24.4941 3.36652H4.73614L4.69414 3.01552C4.60819 2.28593 4.25753 1.61325 3.70863 1.12499C3.15974 0.636739 2.45077 0.366858 1.71614 0.366516L0.494141 0.366516V2.36652H1.71614C1.96107 2.36655 2.19748 2.45647 2.38051 2.61923C2.56355 2.78199 2.68048 3.00626 2.70914 3.24952L4.29414 16.7175C4.38009 17.4471 4.73076 18.1198 5.27965 18.608C5.82855 19.0963 6.53751 19.3662 7.27214 19.3665H20.4941V17.3665H7.27214C7.02705 17.3665 6.79052 17.2764 6.60747 17.1134C6.42441 16.9505 6.30757 16.7259 6.27914 16.4825L6.14814 15.3665H22.3301L24.4941 3.36652ZM20.6581 13.3665H5.91314L4.97214 5.36652H22.1011L20.6581 13.3665Z"
+                        fill="#253D4E"
+                      ></path>
+                      <path
+                        d="M7.49414 24.3665C8.59871 24.3665 9.49414 23.4711 9.49414 22.3665C9.49414 21.2619 8.59871 20.3665 7.49414 20.3665C6.38957 20.3665 5.49414 21.2619 5.49414 22.3665C5.49414 23.4711 6.38957 24.3665 7.49414 24.3665Z"
+                        fill="#253D4E"
+                      ></path>
+                      <path
+                        d="M17.4941 24.3665C18.5987 24.3665 19.4941 23.4711 19.4941 22.3665C19.4941 21.2619 18.5987 20.3665 17.4941 20.3665C16.3896 20.3665 15.4941 21.2619 15.4941 22.3665C15.4941 23.4711 16.3896 24.3665 17.4941 24.3665Z"
+                        fill="#253D4E"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.494141 0.366516)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-slate-500 ml-1">Cart</span>
+                  <span
+                    class="absolute h-[20px] w-[20px] bg-l-green rounded-full text-[12px] flex justify-center items-center text-white top-[-14px] left-[16px]"
+                    >0</span
+                  >
+                </a>
+                <div class="w-[320px] hidden rounded-lg border-[1px] border-slate-200 overflow-hidden absolute duration-500 top-[1rem] -left-[15rem] bg-white z-30 group-hover:block">
+                  <div class="w-full py-6 px-4 flex items-center">
+                    <div class="w-4/5 flex justify-between">
+                      <div class="w-[32%] h-full px-1 rounded-md border-[1px] border-slate-200">
+                        <img src="./imags-box/dandy-blend.jpg" class="w-full">
+                      </div>
+                      <div class="w-3/5 flex flex-col justify-between">
+                        <h2 class="font-medium text-slate-700 text-sm">
+                          Seeds of Change Organic Red Rice
+                        </h2>
+                        <span class="text-gray-400 font-medium">1 <i class="fa-solid fa-xmark text-[10px]"></i> $28.85</span>
+                      </div>
+                    </div>
+                    <div class="w-1/5 flex justify-end">
+                      <a href="#">
+                        <div class="h-[30px] w-[30px] border-[1px] border-slate-200 rounded-full flex items-center justify-center cursor-pointer text-l-green hover:bg-l-green hover:text-white duration-300">
+                          <i class="fa-solid fa-xmark text-xs"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="line-m w-full h-lin-1 bg-slate-200"></div>
+                  <div class="w-full py-6 px-4 flex flex-col gap-2">
+                    <div class="w-full">
+                      <span class="text-gray-400 font-medium">Subtotal:<span class="text-l-green ml-2">$28.85</span></span>
+                    </div>
+                    <div class="w-full h-[45px] flex justify-between">
+                      <div class="bg-l-green rounded cursor-pointer py-3 px-6 w-2/5 flex items-center">
+                        <a href="#" class="text-white flex flex-nowrap items-center">
+                          <span class="font-medium text-base whitespace-nowrap">
+                            View Cart
+                          </span>
+                        </a>
+                      </div>
+                      <div class="bg-l-green rounded cursor-pointer py-3 px-6 w-2/5 flex items-center">
+                        <a href="#" class="text-white flex flex-nowrap items-center">
+                          <span class="font-medium text-base whitespace-nowrap">
+                            Checkout
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="#" class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <g>
+                      <path
+                        d="M21.4443 24.3665H19.4443V19.3235C19.4435 18.5395 19.1317 17.7879 18.5774 17.2335C18.023 16.6791 17.2713 16.3673 16.4873 16.3665H8.40134C7.61733 16.3673 6.86567 16.6791 6.3113 17.2335C5.75693 17.7879 5.44513 18.5395 5.44434 19.3235V24.3665H3.44434V19.3235C3.44592 18.0093 3.96869 16.7494 4.89796 15.8201C5.82723 14.8909 7.08714 14.3681 8.40134 14.3665H16.4873C17.8015 14.3681 19.0614 14.8909 19.9907 15.8201C20.92 16.7494 21.4427 18.0093 21.4443 19.3235V24.3665Z"
+                        fill="#253D4E"
+                      ></path>
+                      <path
+                        d="M12.4443 12.3665C11.2577 12.3665 10.0976 12.0146 9.11092 11.3553C8.12422 10.696 7.35519 9.75898 6.90106 8.66262C6.44694 7.56626 6.32812 6.35986 6.55963 5.19598C6.79114 4.03209 7.36258 2.96299 8.2017 2.12388C9.04081 1.28476 10.1099 0.713318 11.2738 0.481807C12.4377 0.250296 13.6441 0.369116 14.7404 0.823242C15.8368 1.27737 16.7739 2.0464 17.4332 3.0331C18.0924 4.01979 18.4443 5.17983 18.4443 6.36652C18.4427 7.95733 17.8101 9.48253 16.6852 10.6074C15.5604 11.7323 14.0352 12.3649 12.4443 12.3665ZM12.4443 2.36652C11.6532 2.36652 10.8799 2.60111 10.2221 3.04064C9.56426 3.48017 9.05157 4.10488 8.74882 4.83579C8.44607 5.56669 8.36686 6.37096 8.5212 7.14688C8.67554 7.9228 9.0565 8.63554 9.61591 9.19495C10.1753 9.75436 10.8881 10.1353 11.664 10.2897C12.4399 10.444 13.2442 10.3648 13.9751 10.062C14.706 9.75929 15.3307 9.2466 15.7702 8.5888C16.2097 7.931 16.4443 7.15764 16.4443 6.36652C16.4443 5.30565 16.0229 4.28824 15.2728 3.53809C14.5226 2.78795 13.5052 2.36652 12.4443 2.36652Z"
+                        fill="#253D4E"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.444336 0.366516)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-slate-500 ml-1">Account</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="header-bottom hidden lg:block pt-3 pb-8 border-b-slate-200 border-b-[1px]"
+      >
+        <div class="w-[97%] mx-auto flex items-center">
+          <div class="w-[40%]">
+            <div class="w-[65%] flex items-center justify-between">
+              <div
+                class="bg-l-green duration-200 rounded hover:bg-hgreen cursor-pointer py-3 px-6"
+              >
+                <a
+                  href="#"
+                  class="text-white flex flex-nowrap items-center gap-3"
+                >
+                  <i class="fa-brands fa-windows"></i>
+                  <span class="font-medium text-base whitespace-nowrap">
+                    Browse All Categories
+                  </span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </div>
+              <div class="flex items-center gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <g>
+                    <path
+                      d="M13.6667 3.91049C12.6667 3.06299 11.6367 2.18382 10.5942 1.14466L10 0.554657L9.41667 1.14549C7.54 3.02716 6.65333 5.91632 6.26833 7.64966C5.97364 7.19291 5.75497 6.6914 5.62083 6.16466L5.26833 4.80382L4.24333 5.76716C2.4475 7.45299 1.25 9.12549 1.25 11.8038C1.23323 13.7357 1.86243 15.6178 3.03768 17.1512C4.21292 18.6845 5.86681 19.7813 7.73667 20.2672C8.30006 20.4042 8.87509 20.4879 9.45417 20.5172C9.63522 20.5401 9.8175 20.552 10 20.553C10.0958 20.553 10.1892 20.5447 10.2825 20.5388C12.5526 20.4705 14.7068 19.5203 16.2877 17.8897C17.8686 16.2591 18.7519 14.0766 18.75 11.8055C18.75 8.22716 16.3942 6.22716 13.6667 3.91049ZM10.1667 18.8722C10.0833 18.8722 10 18.8805 9.91166 18.8797C9.1616 18.8567 8.44982 18.5431 7.92671 18.0051C7.40361 17.4671 7.11014 16.7467 7.10833 15.9963C7.10833 14.9397 7.675 14.413 8.9575 13.3213C9.28083 13.0463 9.6325 12.7472 10.0025 12.4047C10.3267 12.6988 10.6417 12.9655 10.9325 13.213C12.2208 14.3063 12.8933 14.9272 12.8933 15.9938C12.8919 16.7309 12.6088 17.4396 12.1019 17.9747C11.5949 18.5098 10.9026 18.8309 10.1667 18.8722ZM14.35 17.3963L14.3333 17.408C14.4829 16.9523 14.5594 16.4759 14.56 15.9963C14.56 14.1088 13.3217 13.0572 12.0117 11.9447C11.5475 11.5513 11.0683 11.1447 10.59 10.6663L10 10.0772L9.41083 10.6663C8.87083 11.2055 8.3425 11.6555 7.87666 12.0522C6.57 13.1638 5.44083 14.1247 5.44083 15.9963C5.44261 16.4965 5.52708 16.9929 5.69083 17.4655C4.82338 16.7994 4.12164 15.9418 3.64041 14.9597C3.15918 13.9776 2.91148 12.8975 2.91667 11.8038C2.90296 10.3415 3.46895 8.93326 4.49083 7.88716C4.66685 8.24426 4.87552 8.58432 5.11417 8.90299C5.28847 9.13819 5.52778 9.31725 5.80261 9.41809C6.07744 9.51893 6.37577 9.53714 6.66083 9.47049C6.95082 9.40593 7.21608 9.25921 7.42489 9.04789C7.63371 8.83656 7.77724 8.56956 7.83833 8.27882C8.18726 6.36353 8.94193 4.54505 10.0517 2.94549C10.9308 3.77882 11.8017 4.51632 12.5875 5.18382C15.1975 7.40049 17.0875 9.00216 17.0875 11.8088C17.0895 12.8877 16.8437 13.9526 16.3689 14.9214C15.8941 15.8902 15.2031 16.7369 14.3492 17.3963H14.35Z"
+                      fill="#3BB77E"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0 0.517151)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <a href="#" class="text-base font-semibold whitespace-nowrap">
+                  Hot Deals
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-[60%]">
+            <div class="w-[85%] flex justify-between">
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold">Home</span>
+                  <i class="fa-solid fa-angle-down text-[10px] mt-1 ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold">About</span>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold">Shop</span>
+                  <i class="fa-solid fa-angle-down text-[10px] mt-1 ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold">Vendors</span>
+                  <i class="fa-solid fa-angle-down text-[10px] mt-1 ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold whitespace-nowrap">Mega Menu</span>
+                  <i class="fa-solid fa-angle-down text-[10px] mt-1 ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold">Blog</span>
+                  <i class="fa-solid fa-angle-down text-[10px] mt-1 ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold">Pages</span>
+                  <i class="fa-solid fa-angle-down text-[10px] mt-1 ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center duration-300 hover:text-l-green"
+                >
+                  <span class="font-semibold">Contact</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hid-div flex lg:hidden">
+        <div class="w-[98%] mx-auto flex-col justify-between items-center">
+          <div
+            class="rounded bg-[url('./imags-box/bg-notice.jpg')] w-full py-5 mt-1 flex justify-center bg-center bg-no-repeat bg-cover"
+          >
+            <span class="font-semibold"
+              >Senior’s Member Discount Days! Save 25% Each Tuesday</span
+            >
+          </div>
+          <div class="w-full flex justify-between py-5">
+            <div class="w-[16%]">
+              <img src="./imags-box/logo-nest.png" />
+            </div>
+            <div class="w-[9%] flex items-center justify-between">
+              <span class="relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <g>
+                    <path
+                      d="M24.4941 3.36652H4.73614L4.69414 3.01552C4.60819 2.28593 4.25753 1.61325 3.70863 1.12499C3.15974 0.636739 2.45077 0.366858 1.71614 0.366516L0.494141 0.366516V2.36652H1.71614C1.96107 2.36655 2.19748 2.45647 2.38051 2.61923C2.56355 2.78199 2.68048 3.00626 2.70914 3.24952L4.29414 16.7175C4.38009 17.4471 4.73076 18.1198 5.27965 18.608C5.82855 19.0963 6.53751 19.3662 7.27214 19.3665H20.4941V17.3665H7.27214C7.02705 17.3665 6.79052 17.2764 6.60747 17.1134C6.42441 16.9505 6.30757 16.7259 6.27914 16.4825L6.14814 15.3665H22.3301L24.4941 3.36652ZM20.6581 13.3665H5.91314L4.97214 5.36652H22.1011L20.6581 13.3665Z"
+                      fill="#253D4E"
+                    ></path>
+                    <path
+                      d="M7.49414 24.3665C8.59871 24.3665 9.49414 23.4711 9.49414 22.3665C9.49414 21.2619 8.59871 20.3665 7.49414 20.3665C6.38957 20.3665 5.49414 21.2619 5.49414 22.3665C5.49414 23.4711 6.38957 24.3665 7.49414 24.3665Z"
+                      fill="#253D4E"
+                    ></path>
+                    <path
+                      d="M17.4941 24.3665C18.5987 24.3665 19.4941 23.4711 19.4941 22.3665C19.4941 21.2619 18.5987 20.3665 17.4941 20.3665C16.3896 20.3665 15.4941 21.2619 15.4941 22.3665C15.4941 23.4711 16.3896 24.3665 17.4941 24.3665Z"
+                      fill="#253D4E"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0.494141 0.366516)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span
+                  class="absolute h-[20px] w-[20px] bg-l-green rounded-full text-[12px] flex justify-center items-center text-white top-[-4px] left-[-12px]"
+                  >0</span
+                >
+              </span>
+              <span class="text-[23px]">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </div>
+          </div>
+          <div class="mb-1">
+            <div
+              class="p-2 w-full border-[1px] border-opacity-40 text-sm border-l-green rounded flex justify-between"
+            >
+              <input
+                type="text"
+                placeholder="Search for products..."
+                class="italic outline-none w-[80%] ml-3"
+              />
+              <button
+                type="submit"
+                class="opacity-100 bg-l-green text-white font-semibold rounded py-2 px-6 duration-300 hover:bg-[#fdc040]"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="w-fit fixed bottom-5 right-5 z-50 duration-500 group hover:-translate-y-1">
+      <a href="#">
+        <div class="w-[32px] h-[32px] border-[2px] border-slate-700 rounded-full flex justify-center items-center bg-white">
+          <i class="fa-solid fa-arrow-up duration-500 group-hover:text-yel"></i>
+        </div>
+      </a>
+    </div>
+    <section class="s1 bg-[url('./imags-box/banner-12-min.png')] bg-center bg-cover bg-no-repeat py-12"
+    >
+      <div
+        class="w-[97%] mx-auto flex flex-col lg:flex-row gap-5 lg:justify-between items-center"
+      >
+        <div
+          class="w-full h-[538px] lg:w-[67%] rounded-3xl bg-[url('./imags-box/slider-4-min.png')] bg-center bg-cover"
+        >
+          <div class="max-w-3xl mx-auto mt-20">
+            <h1 class="text-[72px] font-medium text-slate-700 leading-[5rem]">
+              Fresh Vegetables <br />
+              Big discount
+            </h1>
+            <p class="text-[30px] font-medium text-[#7e7e7e] mt-7">
+              Sign up for the daily newsletter
+            </p>
+            <div
+              class="w-[58%] border-none text-sm rounded-[3rem] flex justify-between bg-white mt-12"
+            >
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="bg-transparent outline-none w-full ml-3 text-slate-700 font-medium text-base py-4 pl-4"
+              />
+              <button
+                type="submit"
+                class="bg-l-green text-base text-white font-normal rounded-[3rem] py-2 px-8 duration-300 hover:bg-[#fdc040]"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="w-full flex justify-center gap-2 mt-16">
+            <div
+              class="h-[15px] w-[15px] rounded-full border-[1px] border-black bg-transparent"
+            ></div>
+            <div
+              class="h-[15px] w-[15px] rounded-full border-none bg-l-green"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[538px] lg:w-[31%] rounded-2xl bg-[url('./imags-box/banner-juice-min.png')] bg-cover bg-no-repeat"
+        >
+          <div class="w-fit mt-[6rem] ml-[3rem]">
+            <h2 class="text-[40px] text-slate-700 font-semibold">
+              Delivered <br />
+              to
+              <span class="text-slate-400"
+                >your <br />
+                home</span
+              >
+            </h2>
+            <div class="mt-14">
+              <a
+                href="#"
+                class="w-fit flex items-center text-white text-sm bg-l-green font-medium rounded py-[5px] px-3 shadow-lg shadow-neutral-150 duration-300 hover:-translate-y-1"
+              >
+                <span class="whitespace-nowrap">Shope Now</span>
+                <i class="fa-solid fa-arrow-right-long ml-3 text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s2 py-10">
+      <div
+        class="w-[97%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+      >
+        <div
+          class="bg-[url('./imags-box/banner-strawberry.png')] bg-cover rounded-xl lg:h-[280px] md:h-[280px] h-[348px] flex justify-start items-center"
+        >
+          <div class="ml-11">
+            <h4 class="text-2xl text-slate-700 font-semibold mb-14">
+              Make your Breakfast <br />
+              Healthy and Easy
+            </h4>
+            <a
+              href="#"
+              class="w-fit flex items-center text-white text-sm bg-l-green font-medium rounded py-[5px] px-3 shadow-lg shadow-neutral-150 duration-300 hover:-translate-y-1"
+            >
+              <span class="whitespace-nowrap">Shope Now</span>
+              <i class="fa-solid fa-arrow-right-long ml-3 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-[url('./imags-box/banner-strawberry.png')] bg-cover rounded-xl lg:h-[280px] md:h-[280px] h-[348px] flex justify-start items-center"
+        >
+          <div class="ml-11">
+            <h4 class="text-2xl text-slate-700 font-semibold mb-14">
+              Make your Breakfast <br />
+              Healthy and Easy
+            </h4>
+            <a
+              href="#"
+              class="w-fit flex items-center text-white text-sm bg-l-green font-medium rounded py-[5px] px-3 shadow-lg shadow-neutral-150 duration-300 hover:-translate-y-1"
+            >
+              <span class="whitespace-nowrap">Shope Now</span>
+              <i class="fa-solid fa-arrow-right-long ml-3 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-[url('./imags-box/banner-strawberry.png')] bg-cover rounded-xl lg:h-[280px] md:h-[280px] h-[348px] flex justify-start items-center"
+        >
+          <div class="ml-11">
+            <h4 class="text-2xl text-slate-700 font-semibold mb-14">
+              Make your Breakfast <br />
+              Healthy and Easy
+            </h4>
+            <a
+              href="#"
+              class="w-fit flex items-center text-white text-sm bg-l-green font-medium rounded py-[5px] px-3 shadow-lg shadow-neutral-150 duration-300 hover:-translate-y-1"
+            >
+              <span class="whitespace-nowrap">Shope Now</span>
+              <i class="fa-solid fa-arrow-right-long ml-3 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s3">
+      <div class="w-[97%] mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between md:items-center sm:items-start sm:gap-10"
+        >
+          <div>
+            <span
+              class="text-slate-700 text-[32px] font-semibold whitespace-nowrap"
+              >Featured Categories</span
+            >
+          </div>
+          <div>
+            <ul class="flex gap-5">
+              <li
+                class="text-l-green duration-300 hover:-translate-y-1 cursor-pointer font-medium"
+              >
+                All
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Baking materials
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Fresh fruits
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Milks & Dairies
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Meats
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Vegetables
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-7"
+        >
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+          >
+            <div class="w-full">
+              <span
+                class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                >13%</span
+              >
+            </div>
+            <div class="i-1 absolute top-0">
+              <img
+                src="./imags-box/dandy-blend.jpg"
+                class="w-full p-3 group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div class="i-1 p-3 absolute top-0 invisible">
+              <img
+                src="./imags-box/dandy-blend-b.jpg"
+                class="w-full group-hover:scale-110 group-hover:visible duration-500"
+              />
+            </div>
+            <div class="p-4 absolute bottom-0">
+              <div>
+                <a
+                  href="#"
+                  class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                  >Fresh Fruit</a
+                >
+              </div>
+              <div class="my-2">
+                <h2
+                  class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                >
+                  Seeds of Change Organic Red Rice
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[#adadad] text-xs flex -gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="text-[#adadad] text-xs">0</span>
+              </div>
+              <div class="text-tb font-normal my-3">
+                By
+                <span class="text-l-green duration-300 hover:text-yel"
+                  >NestFood</span
+                >
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                    >$28.85</span
+                  >
+                  <div
+                    class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                  >
+                    $32.80
+                  </div>
+                </div>
+                <div
+                  class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 duration-300 hover:-translate-y-1"
+                >
+                  <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                  <span class="text-l-green font-medium">Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s4 pt-12">
+      <div class="w-[97%] mx-auto">
+        <div
+          class="flex flex-col bg-cover bg-no-repeat rounded-2xl md:flex-row justify-between md:items-center sm:items-start sm:gap-10"
+        >
+          <div>
+            <span
+              class="text-slate-700 text-[32px] font-semibold whitespace-nowrap"
+              >Daily Best Sells</span
+            >
+          </div>
+          <div>
+            <ul class="flex gap-5">
+              <li
+                class="text-l-green duration-300 hover:-translate-y-1 cursor-pointer font-medium"
+              >
+                All
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Deals Of the Day
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Beauty
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Bread & Juice
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Drinks
+              </li>
+              <li
+                class="text-slate-700 duration-300 hover:-translate-y-1 hover:text-l-green cursor-pointer font-medium"
+              >
+                Milks
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex w-full justify-between mt-8">
+          <div
+            class="hidden md:block w-[24%] p-16 h-[520px] bg-[url('./imags-box/banner-lief.png')] bg-cover bg-no-repeat rounded-2xl"
+          >
+            <div>
+              <span class="text-slate-700 text-[38px] font-semibold"
+                >Bring nature into your home</span
+              >
+            </div>
+            <div class="mt-20">
+              <a
+                href="#"
+                class="w-fit flex items-center text-white text-sm bg-l-green font-medium rounded py-[5px] px-3 shadow-lg shadow-neutral-150 duration-300"
+              >
+                <span class="whitespace-nowrap">Shope Now</span>
+                <i class="fa-solid fa-arrow-right-long ml-3 text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-[74.5%] sm:grid sm:grid-cols-2 md:grid md:visible md:grid-cols-3 lg:grid-cols-4 gap-6"
+          >
+            <div
+              class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+            >
+              <div class="w-full">
+                <span
+                  class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                  >13%</span
+                >
+              </div>
+              <div class="i-1 absolute top-0">
+                <img
+                  src="./imags-box/dandy-blend.jpg"
+                  class="w-full p-3 group-hover:scale-110 duration-500"
+                />
+              </div>
+              <div class="i-1 p-3 absolute top-0 invisible">
+                <img
+                  src="./imags-box/dandy-blend-b.jpg"
+                  class="w-full group-hover:scale-110 group-hover:visible duration-500"
+                />
+              </div>
+              <div class="p-4 absolute bottom-0">
+                <div>
+                  <a
+                    href="#"
+                    class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                    >Fresh Fruit</a
+                  >
+                </div>
+                <div class="my-2">
+                  <h2
+                    class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                  >
+                    Seeds of Change Organic Red Rice
+                  </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[#adadad] text-xs flex -gap-1">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  <span class="text-[#adadad] text-xs">0</span>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                      >$28.85</span
+                    >
+                    <div
+                      class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                    >
+                      $32.80
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full h-[6px] flex my-2">
+                  <div
+                    class="h-full w-[65%] bg-l-green rounded-tl-xl rounded-bl-xl"
+                  ></div>
+                  <div
+                    class="h-full w-[35%] bg-tb opacity-50 rounded-tr-xl rounded-br-xl"
+                  ></div>
+                </div>
+                <div class="w-full">
+                  <span class="text-xs">Sold : 243/356</span>
+                </div>
+                <div
+                  class="w-full mt-5 rounded-md text-sm text-white bg-l-green flex items-center justify-center gap-1 duration-300 hover:bg-yel py-4"
+                >
+                  <i class="fa-solid fa-cart-shopping text-xs"></i>
+                  <span class="font-medium">Add to cart</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+            >
+              <div class="w-full">
+                <span
+                  class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                  >13%</span
+                >
+              </div>
+              <div class="i-1 absolute top-0">
+                <img
+                  src="./imags-box/dandy-blend.jpg"
+                  class="w-full p-3 group-hover:scale-110 duration-500"
+                />
+              </div>
+              <div class="i-1 p-3 absolute top-0 invisible">
+                <img
+                  src="./imags-box/dandy-blend-b.jpg"
+                  class="w-full group-hover:scale-110 group-hover:visible duration-500"
+                />
+              </div>
+              <div class="p-4 absolute bottom-0">
+                <div>
+                  <a
+                    href="#"
+                    class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                    >Fresh Fruit</a
+                  >
+                </div>
+                <div class="my-2">
+                  <h2
+                    class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                  >
+                    Seeds of Change Organic Red Rice
+                  </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[#adadad] text-xs flex -gap-1">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  <span class="text-[#adadad] text-xs">0</span>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                      >$28.85</span
+                    >
+                    <div
+                      class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                    >
+                      $32.80
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full h-[6px] flex my-2">
+                  <div
+                    class="h-full w-[65%] bg-l-green rounded-tl-xl rounded-bl-xl"
+                  ></div>
+                  <div
+                    class="h-full w-[35%] bg-tb opacity-50 rounded-tr-xl rounded-br-xl"
+                  ></div>
+                </div>
+                <div class="w-full">
+                  <span class="text-xs">Sold : 243/356</span>
+                </div>
+                <div
+                  class="w-full mt-5 rounded-md text-sm text-white bg-l-green flex items-center justify-center gap-1 duration-300 hover:bg-yel py-4"
+                >
+                  <i class="fa-solid fa-cart-shopping text-xs"></i>
+                  <span class="font-medium">Add to cart</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden md:grid lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+            >
+              <div class="w-full">
+                <span
+                  class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                  >13%</span
+                >
+              </div>
+              <div class="i-1 absolute top-0">
+                <img
+                  src="./imags-box/dandy-blend.jpg"
+                  class="w-full p-3 group-hover:scale-110 duration-500"
+                />
+              </div>
+              <div class="i-1 p-3 absolute top-0 invisible">
+                <img
+                  src="./imags-box/dandy-blend-b.jpg"
+                  class="w-full group-hover:scale-110 group-hover:visible duration-500"
+                />
+              </div>
+              <div class="p-4 absolute bottom-0">
+                <div>
+                  <a
+                    href="#"
+                    class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                    >Fresh Fruit</a
+                  >
+                </div>
+                <div class="my-2">
+                  <h2
+                    class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                  >
+                    Seeds of Change Organic Red Rice
+                  </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[#adadad] text-xs flex -gap-1">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  <span class="text-[#adadad] text-xs">0</span>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                      >$28.85</span
+                    >
+                    <div
+                      class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                    >
+                      $32.80
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full h-[6px] flex my-2">
+                  <div
+                    class="h-full w-[65%] bg-l-green rounded-tl-xl rounded-bl-xl"
+                  ></div>
+                  <div
+                    class="h-full w-[35%] bg-tb opacity-50 rounded-tr-xl rounded-br-xl"
+                  ></div>
+                </div>
+                <div class="w-full">
+                  <span class="text-xs">Sold : 243/356</span>
+                </div>
+                <div
+                  class="w-full mt-5 rounded-md text-sm text-white bg-l-green flex items-center justify-center gap-1 duration-300 hover:bg-yel py-4"
+                >
+                  <i class="fa-solid fa-cart-shopping text-xs"></i>
+                  <span class="font-medium">Add to cart</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden lg:grid lg:h-[490px] h-[550px] rounded-2xl border-[1px] border-slate-200 relative hover:shadow-lg shadow-slate-200 hover:border-[#bce3c9] duration-300 cursor-pointer group overflow-hidden"
+            >
+              <div class="w-full">
+                <span
+                  class="bg-l-green relative z-10 text-white text-xs px-[20px] py-[5px] rounded-tl-2xl rounded-br-3xl"
+                  >13%</span
+                >
+              </div>
+              <div class="i-1 absolute top-0">
+                <img
+                  src="./imags-box/dandy-blend.jpg"
+                  class="w-full p-3 group-hover:scale-110 duration-500"
+                />
+              </div>
+              <div class="i-1 p-3 absolute top-0 invisible">
+                <img
+                  src="./imags-box/dandy-blend-b.jpg"
+                  class="w-full group-hover:scale-110 group-hover:visible duration-500"
+                />
+              </div>
+              <div class="p-4 absolute bottom-0">
+                <div>
+                  <a
+                    href="#"
+                    class="text-[#adadad] text-xs hover:text-l-green duration-300"
+                    >Fresh Fruit</a
+                  >
+                </div>
+                <div class="my-2">
+                  <h2
+                    class="font-medium text-slate-700 text-base hover:text-l-green duration-300"
+                  >
+                    Seeds of Change Organic Red Rice
+                  </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[#adadad] text-xs flex -gap-1">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  <span class="text-[#adadad] text-xs">0</span>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                      >$28.85</span
+                    >
+                    <div
+                      class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                    >
+                      $32.80
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full h-[6px] flex my-2">
+                  <div
+                    class="h-full w-[65%] bg-l-green rounded-tl-xl rounded-bl-xl"
+                  ></div>
+                  <div
+                    class="h-full w-[35%] bg-tb opacity-50 rounded-tr-xl rounded-br-xl"
+                  ></div>
+                </div>
+                <div class="w-full">
+                  <span class="text-xs">Sold : 243/356</span>
+                </div>
+                <div
+                  class="w-full mt-5 rounded-md text-sm text-white bg-l-green flex items-center justify-center gap-1 duration-300 hover:bg-yel py-4"
+                >
+                  <i class="fa-solid fa-cart-shopping text-xs"></i>
+                  <span class="font-medium">Add to cart</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s5 pb-10">
+      <div class="w-[97%] mx-auto">
+        <div class="my-8">
+          <span
+            class="text-slate-700 text-[32px] font-semibold whitespace-nowrap"
+            >Deals Of The Day</span
+          >
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full"
+        >
+          <div class="h-[476px] relative group">
+            <div class="w-full absolute top-0 left-0">
+              <img
+                src="./imags-box/banner-orange-min.png"
+                class="w-full rounded-2xl"
+              />
+            </div>
+            <div class="absolute z-10 bottom-0 left-0 px-5 w-full">
+              <div class="duration-300 group-hover:-translate-y-2">
+                <div class="w-full mb-3">
+                  <div class="w-[85%] mx-auto grid grid-cols-4 gap-2">
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">36</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Days</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">02</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Hours</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">50</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Mins</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">41</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Secs</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl shadow-slate-300 p-6">
+                  <div class="my-2">
+                    <h2
+                      class="font-medium text-slate-700 text-lg hover:text-l-green duration-300"
+                    >
+                    Naturally Flavored Cinnamon Vanilla
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="text-tb font-normal my-3">
+                    By
+                    <span class="text-l-green cursor-pointer duration-300 hover:text-yel"
+                      >Hambger Hel</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$51.00</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $55.00
+                      </div>
+                    </div>
+                    <div
+                      class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 cursor-pointer duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                      <span class="text-l-green font-medium">Add</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[476px] relative group">
+            <div class="w-full absolute top-0 left-0">
+              <img
+                src="./imags-box/banner-orange-min.png"
+                class="w-full rounded-2xl"
+              />
+            </div>
+            <div class="absolute z-10 bottom-0 left-0 px-5 w-full">
+              <div class="duration-300 group-hover:-translate-y-2">
+                <div class="w-full mb-3">
+                  <div class="w-[85%] mx-auto grid grid-cols-4 gap-2">
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">36</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Days</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">02</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Hours</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">50</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Mins</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">41</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Secs</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl shadow-slate-300 p-6">
+                  <div class="my-2">
+                    <h2
+                      class="font-medium text-slate-700 text-lg hover:text-l-green duration-300"
+                    >
+                    Naturally Flavored Cinnamon Vanilla
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="text-tb font-normal my-3">
+                    By
+                    <span class="text-l-green cursor-pointer duration-300 hover:text-yel"
+                      >Hambger Hel</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$51.00</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $55.00
+                      </div>
+                    </div>
+                    <div
+                      class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 cursor-pointer duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                      <span class="text-l-green font-medium">Add</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[476px] relative group">
+            <div class="w-full absolute top-0 left-0">
+              <img
+                src="./imags-box/banner-orange-min.png"
+                class="w-full rounded-2xl"
+              />
+            </div>
+            <div class="absolute z-10 bottom-0 left-0 px-5 w-full">
+              <div class="duration-300 group-hover:-translate-y-2">
+                <div class="w-full mb-3">
+                  <div class="w-[85%] mx-auto grid grid-cols-4 gap-2">
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">36</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Days</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">02</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Hours</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">50</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Mins</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">41</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Secs</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl shadow-slate-300 p-6">
+                  <div class="my-2">
+                    <h2
+                      class="font-medium text-slate-700 text-lg hover:text-l-green duration-300"
+                    >
+                    Naturally Flavored Cinnamon Vanilla
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="text-tb font-normal my-3">
+                    By
+                    <span class="text-l-green cursor-pointer duration-300 hover:text-yel"
+                      >Hambger Hel</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$51.00</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $55.00
+                      </div>
+                    </div>
+                    <div
+                      class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 cursor-pointer duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                      <span class="text-l-green font-medium">Add</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[476px] relative group">
+            <div class="w-full absolute top-0 left-0">
+              <img
+                src="./imags-box/banner-orange-min.png"
+                class="w-full rounded-2xl"
+              />
+            </div>
+            <div class="absolute z-10 bottom-0 left-0 px-5 w-full">
+              <div class="duration-300 group-hover:-translate-y-2">
+                <div class="w-full mb-3">
+                  <div class="w-[85%] mx-auto grid grid-cols-4 gap-2">
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">36</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Days</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">02</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Hours</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">50</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Mins</div>
+                    </div>
+                    <div class="rounded bg-white flex flex-col items-center pt-2 pb-1">
+                      <div>
+                        <span class="text-l-green text-xl">41</span>
+                      </div>
+                      <div class="text-gray-500 font-normal">Secs</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl shadow-slate-300 p-6">
+                  <div class="my-2">
+                    <h2
+                      class="font-medium text-slate-700 text-lg hover:text-l-green duration-300"
+                    >
+                    Naturally Flavored Cinnamon Vanilla
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="text-tb font-normal my-3">
+                    By
+                    <span class="text-l-green cursor-pointer duration-300 hover:text-yel"
+                      >Hambger Hel</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$51.00</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $55.00
+                      </div>
+                    </div>
+                    <div
+                      class="h-[36px] w-[76px] rounded-md text-sm text-l-green bg-lig flex items-center justify-center gap-1 cursor-pointer duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-l-green"></i>
+                      <span class="text-l-green font-medium">Add</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s6">
+      <div class="w-[97%] mx-auto">
+         <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="g-box">
+            <div class="g-box-top">
+              <div class="w-full">
+                <span class="text-slate-700 text-[25px] font-semibold whitespace-nowrap">Trending Products</span>
+              </div>
+              <div class="line w-full mt-4">
+                <div class="w-full h-[1px] bg-slate-200"></div>
+                <div class="w-[25%] h-[1.5px] bg-l-green opacity-40"></div>
+              </div>
+            </div>
+            <div class="g-box-bottom overflow-hidden">
+              <div class="flex items-center mt-7 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-sahale.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 text-base cursor-pointer hover:text-l-green duration-300"
+                    >
+                    Foster Farms Takeout Crispy Classic
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$17.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $19.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center my-6 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-pukka.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 cursor-pointer text-base hover:text-l-green duration-300"
+                    >
+                    Haagen  Caramel Cone Ice Cream Boxed
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$22.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $24.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-altura.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 cursor-pointer leading-5 text-base hover:text-l-green duration-300"
+                    >
+                    Gorton’s Beer Battered Fish Fillets
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$23.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $25.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g-box">
+            <div class="g-box-top">
+              <div class="w-full">
+                <span class="text-slate-700 text-[25px] font-semibold whitespace-nowrap">Trending Products</span>
+              </div>
+              <div class="line w-full mt-4">
+                <div class="w-full h-[1px] bg-slate-200"></div>
+                <div class="w-[25%] h-[1.5px] bg-l-green opacity-40"></div>
+              </div>
+            </div>
+            <div class="g-box-bottom overflow-hidden">
+              <div class="flex items-center mt-7 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-sahale.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 text-base cursor-pointer hover:text-l-green duration-300"
+                    >
+                    Foster Farms Takeout Crispy Classic
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$17.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $19.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center my-6 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-pukka.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 cursor-pointer text-base hover:text-l-green duration-300"
+                    >
+                    Haagen  Caramel Cone Ice Cream Boxed
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$22.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $24.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-altura.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 cursor-pointer leading-5 text-base hover:text-l-green duration-300"
+                    >
+                    Gorton’s Beer Battered Fish Fillets
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$23.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $25.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g-box">
+            <div class="g-box-top">
+              <div class="w-full">
+                <span class="text-slate-700 text-[25px] font-semibold whitespace-nowrap">Trending Products</span>
+              </div>
+              <div class="line w-full mt-4">
+                <div class="w-full h-[1px] bg-slate-200"></div>
+                <div class="w-[25%] h-[1.5px] bg-l-green opacity-40"></div>
+              </div>
+            </div>
+            <div class="g-box-bottom overflow-hidden">
+              <div class="flex items-center mt-7 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-sahale.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 text-base cursor-pointer hover:text-l-green duration-300"
+                    >
+                    Foster Farms Takeout Crispy Classic
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$17.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $19.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center my-6 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-pukka.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 cursor-pointer text-base hover:text-l-green duration-300"
+                    >
+                    Haagen  Caramel Cone Ice Cream Boxed
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$22.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $24.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-altura.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 cursor-pointer leading-5 text-base hover:text-l-green duration-300"
+                    >
+                    Gorton’s Beer Battered Fish Fillets
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$23.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $25.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g-box">
+            <div class="g-box-top">
+              <div class="w-full">
+                <span class="text-slate-700 text-[25px] font-semibold whitespace-nowrap">Trending Products</span>
+              </div>
+              <div class="line w-full mt-4">
+                <div class="w-full h-[1px] bg-slate-200"></div>
+                <div class="w-[25%] h-[1.5px] bg-l-green opacity-40"></div>
+              </div>
+            </div>
+            <div class="g-box-bottom overflow-hidden">
+              <div class="flex items-center mt-7 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-sahale.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 text-base cursor-pointer hover:text-l-green duration-300"
+                    >
+                    Foster Farms Takeout Crispy Classic
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$17.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $19.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center my-6 duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-pukka.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 leading-5 cursor-pointer text-base hover:text-l-green duration-300"
+                    >
+                    Haagen  Caramel Cone Ice Cream Boxed
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$22.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $24.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center duration-300 hover:-translate-y-1">
+                <div class="w-[35%]">
+                  <img src="./imags-box/product-altura.jpg" class="w-full">
+                </div>
+                <div class="w-[75%]">
+                  <div class="w-full mb-2">
+                    <h2
+                      class="font-medium text-slate-700 cursor-pointer leading-5 text-base hover:text-l-green duration-300"
+                    >
+                    Gorton’s Beer Battered Fish Fillets
+                    </h2>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#adadad] text-xs flex -gap-1">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="text-[#adadad] text-xs">0</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-medium relative text-l-green text-lg after:absolute after:w-full after:h-[2px] after:bottom-[4px] after:left-0 after:bg-l-green"
+                        >$23.85</span
+                      >
+                      <div
+                        class="relative w-fit text-tb text-sm font-medium opacity-80 after:absolute after:bottom-[6px] after:left-0 after:w-full after:h-[2px] after:bg-tb"
+                      >
+                        $25.80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+    <section class="s7">
+      <div class="w-[97%] mx-auto">
+        <div class="my-6 text-l-green font-medium hover:text-yel cursor-pointer duration-300 flex items-center gap-7">
+          <span class="text-slate-700 text-[32px] font-normal whitespace-nowrap">Shop by Categories</span>
+          <span>All Categories <i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-5">
+          <div class="g-box rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+          <div class="g-box rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+          <div class="g-box hidden rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 sm:flex md:flex lg:flex xl:flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+          <div class="g-box hidden rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 md:flex lg:flex xl:flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+          <div class="g-box hidden rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 lg:flex xl:flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+          <div class="g-box hidden rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 xl:flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+          <div class="g-box hidden rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 xl:flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+          <div class="g-box hidden rounded-xl bg-slate-100 h-[234px] p-7 cursor-pointer duration-300 xl:flex flex-col justify-between hover:border-[1px] hover:border-l-green hover:border-opacity-50 hover:bg-white">
+            <div class="w-full group">
+              <img src="./imags-box/category-mark.png" width="80" height="80" class="mx-auto duration-500 group-hover:scale-110 cursor-pointer">
+            </div>
+            <div class="w-full text-center flex flex-col">
+              <span class="text-slate-700 font-semibold duration-300 cursor-pointer hover:text-l-green">Milks and Dairies</span>
+              <span class="text-gray-500 font-normal">5 items</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s8">
+      <div class="w-[97%] mx-auto">
+        <div class="w-full mt-5 py-5 sm:py-16 px-2 sm:px-20 rounded-3xl flex justify-start relative bg-[url('./imags-box/banner-bg-green-10.png')] bg-center bg-cover bg-no-repeat">
+          <div class="max-w-[45%]">
+            <h1 class="text-2xl md:text-[40px] font-medium text-slate-700 whitespace-nowrap">
+              Stay home & get your daily <br>
+              needs from our shop
+            </h1>
+            <p class="text-lg font-normal text-[#7e7e7e] mt-7 whitespace-nowrap">
+              Start Your Daily Shopping with <span class="text-l-green">Nest Mart</span>
+            </p>
+            <div class="w-full sm:max-w-[450px] border-none text-sm rounded-[3rem] flex justify-between bg-white mt-12">
+              <input type="email" placeholder="Your email address" class="bg-transparent outline-none w-full ml-3 text-slate-700 font-medium text-xs sm:text-base py-1 sm:py-4 pl-4">
+              <button type="submit" class="bg-l-green text-xs sm:text-base text-white font-normal rounded-[3rem] py-0 sm:py-2  px-2 sm:px-8 duration-300 hover:bg-hgreen">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="max-w-[42%] absolute -z-10 bottom-0 right-10">
+            <img src="./imags-box/banner-vegtman.png" class="w-full">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s9">
+      <div class="w-[97%] mx-auto my-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+          <div class="g-box rounded-xl bg-slate-100 p-5 flex items-center group">
+            <div class="w-[60px] mr-5 duration-300 group-hover:-translate-y-1">
+              <img src="./imags-box/icon-1.png" class="w-full">
+            </div>
+            <div>
+              <div>
+                <span class="text-xl font-normal cursor-pointer">Best prices & offers</span>
+              </div>
+              <div>
+                <span class="text-tb text-base">Orders $50 or more</span>
+              </div>
+            </div>
+          </div>
+          <div class="g-box rounded-xl bg-slate-100 p-5 flex items-center group">
+            <div class="w-[60px] mr-5 duration-300 group-hover:-translate-y-1">
+              <img src="./imags-box/icon-1.png" class="w-full">
+            </div>
+            <div>
+              <div>
+                <span class="text-xl font-normal cursor-pointer">Best prices & offers</span>
+              </div>
+              <div>
+                <span class="text-tb text-base">Orders $50 or more</span>
+              </div>
+            </div>
+          </div>
+          <div class="g-box rounded-xl bg-slate-100 p-5 flex items-center group">
+            <div class="w-[60px] mr-5 duration-300 group-hover:-translate-y-1">
+              <img src="./imags-box/icon-1.png" class="w-full">
+            </div>
+            <div>
+              <div>
+                <span class="text-xl font-normal cursor-pointer">Best prices & offers</span>
+              </div>
+              <div>
+                <span class="text-tb text-base">Orders $50 or more</span>
+              </div>
+            </div>
+          </div>
+          <div class="g-box rounded-xl bg-slate-100 p-5 flex items-center group">
+            <div class="w-[60px] mr-5 duration-300 group-hover:-translate-y-1">
+              <img src="./imags-box/icon-1.png" class="w-full">
+            </div>
+            <div>
+              <div>
+                <span class="text-xl font-normal cursor-pointer">Best prices & offers</span>
+              </div>
+              <div>
+                <span class="text-tb text-base">Orders $50 or more</span>
+              </div>
+            </div>
+          </div>
+          <div class="g-box rounded-xl bg-slate-100 p-5 flex items-center group">
+            <div class="w-[60px] mr-5 duration-300 group-hover:-translate-y-1">
+              <img src="./imags-box/icon-1.png" class="w-full">
+            </div>
+            <div>
+              <div>
+                <span class="text-xl font-normal cursor-pointer">Best prices & offers</span>
+              </div>
+              <div>
+                <span class="text-tb text-base">Orders $50 or more</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="foottop w-full border-b-[0.7px] border-l-green border-opacity-50 pb-16">
+        <div class="w-[97%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-4">
+          <div class="log-b">
+            <div class="log-in w-[70%]">
+              <div class="w-[80%]">
+                <img src="./imags-box/logo-nest.png" class="w-full">
+              </div>
+              <div class="w-full mt-7">
+                Awesome grocery store website template
+              </div>
+              <div class="mt-7">
+                <i class="fa-solid fa-location-dot text-l-green mr-2"></i>
+                <span class="font-medium">Address</span>
+                5171 W Campbell Ave undefined Kent, Utah 53127 United States
+              </div>
+              <div class="mt-3">
+                <i class="fa-solid fa-headphones text-l-green mr-2"></i>
+                Call Us
+                <a href="#" class="text-l-green duration-300 hover:text-yel">(+91)-540-025-124553</a>
+              </div>
+              <div class="mt-3">
+                <i class="fa-regular fa-envelope text-l-green mr-2"></i>
+                email
+                <a href="#" class="text-l-green duration-300 hover:text-yel">sale@Nest.com</a>
+              </div>
+              <div class="mt-3">
+                <i class="fa-regular fa-clock text-l-green mr-2"></i>
+                <span class="font-medium">Hours</span>
+                10:00 - 18:00, Mon - Sat
+              </div>
+            </div>
+          </div>
+          <div class="ComAcc flex justify-between">
+            <div class="w-[50%]">
+              <ul class="gap-3 grid">
+                <li class="text-2xl font-semibold">Company</li>
+                <li class="duration-300 hover:text-l-green">About Us</li>
+                <li class="duration-300 hover:text-l-green">Delivery Information</li>
+                <li class="duration-300 hover:text-l-green">Privacy Policy</li>
+                <li class="duration-300 hover:text-l-green">Terms & Conditions</li>
+                <li class="duration-300 hover:text-l-green">Contact Us</li>
+                <li class="duration-300 hover:text-l-green">Support Center</li>
+                <li class="duration-300 hover:text-l-green">Careers</li>
+              </ul>
+            </div>
+            <div class="w-[50%]">
+              <ul class="gap-3 grid">
+                <li class="text-2xl font-semibold">Account</li>
+                <li class="duration-300 hover:text-l-green">Sign In</li>
+                <li class="duration-300 hover:text-l-green">View Cart</li>
+                <li class="duration-300 hover:text-l-green">My Wishlist</li>
+                <li class="duration-300 hover:text-l-green">Track My Order</li>
+                <li class="duration-300 hover:text-l-green">Help Ticket</li>
+                <li class="duration-300 hover:text-l-green">Shipping Details</li>
+                <li class="duration-300 hover:text-l-green">Compare products</li>
+              </ul>
+            </div>
+          </div>
+          <div class="CorPop flex justify-between">
+            <div class="w-[50%]">
+              <ul class="gap-3 grid">
+                <li class="text-2xl font-semibold">Company</li>
+                <li class="duration-300 hover:text-l-green">About Us</li>
+                <li class="duration-300 hover:text-l-green">Delivery Information</li>
+                <li class="duration-300 hover:text-l-green">Privacy Policy</li>
+                <li class="duration-300 hover:text-l-green">Terms & Conditions</li>
+                <li class="duration-300 hover:text-l-green">Contact Us</li>
+                <li class="duration-300 hover:text-l-green">Support Center</li>
+                <li class="duration-300 hover:text-l-green">Careers</li>
+              </ul>
+            </div>
+            <div class="w-[50%]">
+              <ul class="gap-3 grid">
+                <li class="text-2xl font-semibold">Account</li>
+                <li class="duration-300 hover:text-l-green">Sign In</li>
+                <li class="duration-300 hover:text-l-green">View Cart</li>
+                <li class="duration-300 hover:text-l-green">My Wishlist</li>
+                <li class="duration-300 hover:text-l-green">Track My Order</li>
+                <li class="duration-300 hover:text-l-green">Help Ticket</li>
+                <li class="duration-300 hover:text-l-green">Shipping Details</li>
+                <li class="duration-300 hover:text-l-green">Compare products</li>
+              </ul>
+            </div>
+          </div>
+          <div class="Inst-all">
+            <div class="text-2xl font-semibold">Install App</div>
+            <div class="text-gray-500 my-6">From App Store or Google Play</div>
+            <div class="go-app flex w-full gap-5 mb-6">
+              <div class="w-[40%] cursor-pointer group">
+                <img src="./imags-box/google-play.jpg" class="w-[90%] duration-300 group-hover:-translate-y-1">
+              </div>
+              <div class="w-[40%] cursor-pointer group">
+                <img src="./imags-box/app-store.jpg" class="w-[90%] duration-300 group-hover:-translate-y-1">
+              </div>
+            </div>
+            <div>Secured Payment Gateways</div>
+            <div class="mt-4 w-[224px] cursor-pointer duration-300 hover:-translate-y-1"><img src="./imags-box/payment-method.png" class="w-full"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footbottom py-10">
+        <div class="w-[97%] mx-auto grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-1">
+          <div class="text-gray-500 text-center md:text-start">
+            © 2023, Nest – WordPress Ecommerce Template. <br>
+            All rights reserved
+          </div>
+          <div class="hidden lg:flex lg:justify-between">
+            <div class="w-[40%] flex items-center justify-between">
+              <div class="w-[17%]">
+                <img src="./imags-box/phone-call.png" class="w-full opacity-50">
+              </div>
+              <div class="w-[75%]">
+                <div><a href="#" class="text-l-green font-bold text-sm xl:text-2xl duration-300 hover:text-yel">1900646666</a></div>
+                <div><span class="text-xs text-gray-500">Working 8:00 - 22:00</span></div>
+              </div>
+            </div>
+            <div class="w-[40%] flex items-center justify-between">
+              <div class="w-[17%]">
+                <img src="./imags-box/phone-call.png" class="w-full opacity-50">
+              </div>
+              <div class="w-[75%]">
+                <div><a href="#" class="text-l-green font-bold text-sm xl:text-2xl duration-300 hover:text-yel">1900648888</a></div>
+                <div><span class="text-xs text-gray-500">24/7 Support Center</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="w-full flex justify-center md:justify-end">
+              <div class="w-fit flex items-center gap-2">
+                <div class="w-fit font-medium">Follow Us</div>
+                <a href="#" class="h-[30px] w-[30px] bg-l-green rounded-full flex items-center justify-center duration-300 hover:-translate-y-1">
+                  <i class="fa-brands fa-facebook-f text-xs text-white"></i>
+                </a>
+                <a href="#" class="h-[30px] w-[30px] bg-l-green rounded-full flex items-center justify-center duration-300 hover:-translate-y-1">
+                  <i class="fa-brands fa-twitter text-xs text-white"></i>
+                </a>
+                <a href="#" class="h-[30px] w-[30px] bg-l-green rounded-full flex items-center justify-center duration-300 hover:-translate-y-1">
+                  <i class="fa-brands fa-skype text-xs text-white"></i>
+                </a>
+                <a href="#" class="h-[30px] w-[30px] bg-l-green rounded-full flex items-center justify-center duration-300 hover:-translate-y-1">
+                  <i class="fa-brands fa-instagram text-xs text-white"></i>
+                </a>
+              </div>
+            </div>
+            <div class="w-full flex justify-center md:justify-end mt-2">
+              <div class="w-fit text-gray-500">Up to 15% discount on your first subscribe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
